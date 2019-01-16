@@ -1,0 +1,186 @@
+       problem 1
+                         //Multiplication table..
+
+// iterate from 0 to 10
+for(var i=0;i<10;i++){
+    var result=i*9; //for each iterate Multiply the number by 9
+    console.log(result); //log the result..
+}// end for
+
+                                             //>>>>>>>>Bonus<<<<<<<<
+
+for(var i=1;i<=10;i++){
+   console.log("*** Multiply by "+i+" ***"); //which table I am in (table i)
+            // used nested loop to show the table for every multiplier
+   for(var j=1;j<=10;j++){
+      var result= i*j; //for each iterate Multiply the number from 1 to 10
+      console.log(i+" * "+j+" = "+result+""); //log the result..
+    } //end for j
+} //end for i
+       
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       problem 2
+                                                //The grade assigner
+
+//create assignGrade function
+
+function assignGrade(grade){
+    // for loop from 60 to 100
+    if(grade<60){
+     return "F";
+    }
+    //check the 'D' result of grade
+    else if (grade>=60 && grade<70)
+      return "D";
+       else if(grade>=60 && grade<70)
+         console.log("for "+grade+" you got a D");
+      //check the 'C' result of grade
+        else if(grade>=70 && grade<80)
+         return "C";
+      //check the 'B' result of grade
+        else if(grade>=80 && grade<90)
+         return "B";
+      //check the 'A' result of grade
+        else if(grade>=90 && grade<=100)
+         return "A";
+}//end assignGrade
+
+
+//for 
+
+for(var gradNum=60;gradNum<=100;gradNum++){
+console.log("for "+gradNum+" you got a"+assignGrade(gradNum));
+}
+
+
+                                          // another way without prameter
+
+function assignGrade(){
+    //for loop from 60 to 100
+   if(grade<60){
+      console.log("for "+grade+" you got a F");
+    }
+    else{
+   for(var gradNum=60;gradNum<=100;gradNum++){
+      //check the 'D' result of grade
+       if(gradNum>=60 && gradNum<70){
+         console.log("for "+gradNum+" you got a D");}
+      //check the 'C' result of grade
+        else if(gradNum>=70 && gradNum<80){
+        console.log("for "+gradNum+" you got a C");}
+      //check the 'B' result of grade
+        else if(gradNum>=80 && gradNum<90){
+         console.log("for "+gradNum+" you got a B");}
+      //check the 'A' result of grade
+        else if(gradNum>=90 && gradNum<=100){
+        console.log("for "+gradNum+" you got a A");}
+      
+   }//end loop
+   }//end else statment
+}//end assignGrade
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+       problem 3
+                                                     //Golf
+
+for(var i=1;i<=8;i++){
+    if(i===1)// score 1
+       console.log("Hole in one");
+    else if(i<=5-2) //
+       console.log("Eagle");
+    else if(5-1===i)//par -1
+       console.log("Birdie");
+    else if(i===5)
+       console.log("Par");
+
+    else if(5+1===i)
+       console.log("Bogey");
+    
+     else if(5+2===i)
+       console.log("Double Bogey");
+    
+    else if(i>=5+3)
+       console.log("Not sure");
+}//end for 
+   
+                                          //>>>>>>>>Bonus<<<<<<<<
+
+var counter=1;
+for(var i=1;i<=8;i++){
+
+    if(i===1)// score 1
+       console.log("Hole in one");
+    else if(i<=5-2) //
+       console.log("Eagle");
+    else if(5-1===i)//par -1
+       console.log("Birdie");
+    else if(i===5)
+       console.log("Par");
+
+    else if(5+1===i)
+       console.log("Bogey");
+    
+     else if(5+2===i)
+       console.log("Double Bogey");
+    
+    else if(i>=5+3)
+       console.log("Not sure");
+
+//if par changing-->par=3
+       while(counter===i){
+    if(counter===1)// score 1
+       console.log("Hole in one");
+
+    else if(counter<=3-2) //
+       console.log("Eagle");
+
+    else if(3-1===counter)//par -1
+       console.log("Birdie");
+
+    else if(counter===3)
+       console.log("Par");
+
+    else if(3+1===counter)
+       console.log("Bogey");
+
+     else if(3+2===counter)
+       console.log("Double Bogey");
+
+    else if(counter>=3+3)
+       console.log("Not sure");
+
+       counter++;
+       }
+}//end for 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                                 //The rest
+   // If I want to challenge more than one time in a gmae (Rock, Paper, Scissors)
+   //create function return result
+   //used array usersValue ["Paper","Scissors","Paper","Scissors","rock"]
+   //for loop will be end at length of array
+
+function Game(str1,str2){
+
+    if(str1==="rock"&& str2==="Paper"|| str1==="Scissors"&& str2==="rock" || str1==="Paper"&& str2==="Scissors"){
+      return "user 2 win";
+    }
+    else if(str2==="rock"&& str1==="Paper"|| str2==="Scissors"&& str1==="rock" || str2==="Paper"&& str1==="Scissors" ){
+       return "user 1 win";
+    }
+    else
+    {
+       return "TEI";
+    }
+ }
+
+
+ var usersValue=["rock","Paper","Scissors","Paper","Scissors","rock","Scissors","rock","rock","Scissors","rock","Scissors"];
+ for(var i=0;i+1<arr.length;i++){
+    console.log(Game(usersValue[i],usersValue[i+1]));
+ }
+
+
+   
