@@ -1,0 +1,46 @@
+
+
+
+//Multiplication Tables
+
+
+for ( i = 0 ; i <= 10 ; i ++){
+
+   var x = i * 9 ;
+   console.log(i + "*" + "9" + "=" + x);
+
+}
+
+
+
+
+
+.................................................
+
+
+// The Grade Assigner
+
+
+function assignGrade (grade) {
+
+
+    var array =[] ;
+    for (i = 0; i < array.length; array[i++] = 0){
+        console.log();
+
+    }
+
+
+    if (grade >=60 && grade < 70){
+        return " For " + grade + ", you got a D."} ;
+
+        if (grade >=70 && grade < 80){
+        return " For " + grade + ", you got a C." } ;
+    
+    if (grade >=80 && grade < 90){
+        return " For " + grade + ", you got a B."} ;
+
+        if (grade >=90 && grade <= 100){
+        return " For " + grade + ", you got a A."} ;
+
+}
