@@ -39,9 +39,3 @@ Bonus: Use a nested for loop to run the same piece of code, but with par changin
 ## The Rest
 
 Make the rest of the programs you made in the conditional exercises use loops in some way (if possible)
-
-## 99 Bottles of Beer
-
-Write a script that prints the lyrics to "99 Bottles of Beer on the Wall" in the terminal. If you're unfamiliar with the song, you can find the lyrics [here](http://www.99-bottles-of-beer.net/lyrics.html).
-
-Make sure your program can handle both singular and plural cases (i.e. both "100 bottles of beer" and "1 bottle of beer").
