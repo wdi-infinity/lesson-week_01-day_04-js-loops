@@ -1,0 +1,17 @@
+"Problem 1"
+for ( var i = 0; i <= 10; i++ ) {
+console.log(i * 9);
+}
+0
+9
+18
+27
+36
+45
+54
+63
+72
+81
+90
+
+"Problem 2"
