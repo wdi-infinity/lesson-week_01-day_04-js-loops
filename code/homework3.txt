@@ -1,0 +1,26 @@
+for (var i=0;i<=20;i++)
+{
+var result=i*9;
+console.log(i+"*"+"9"+"="+result);
+}
+
+/////////////////////
+//The Grade Assigner
+function assignGrade (grade)
+{
+for (var i=60;i<=100;i++)
+{
+if (grade<=60)
+{
+console.log("for "+ grade + "you got a D");}
+else if(61<=grade&&grade<=75)
+{
+console.log("for "+ grade + "you got a C");}
+else if(76<=grade&&grade<=85)
+{
+console.log("for "+ grade + "you got a B");}
+else 
+{
+console.log("for "+ grade + "you got a A");}
+}
+}
