@@ -1,0 +1,43 @@
+1-
+for ( var i = 0; i <=10 ; i++){
+
+console.log(  (i*9));
+}
+
+2-
+function Grade(num){
+
+if (num <= 100 && num >= 90 ){
+return " Your grade is A";
+}
+
+else if (num < 90 && num >= 80 ){
+return " Your grade is B";
+}
+
+else if (num < 80  && num >= 70 ){
+return " Your grade is C";
+}
+
+else if (num < 70 && num >= 60 ){
+return " Your grade is D";
+}
+
+else {
+return " Not pass";
+}
+}
+
+3-
+
+function golfScore(par, strokes) {
+    if(strokes == 1) return "Hole in one!";
+    else if(strokes <= par -2) return "Eagle";
+    else if(strokes === par -1) return "Birdie";
+    else if(strokes === par) return "Par";
+    else if(strokes === par + 1) return "Bogey";
+    else if(strokes === par + 2) return "Double Bogey";
+    else if(strokes >= par + 3) return "Not sure";
+
+return "Wrong enter";
+}
