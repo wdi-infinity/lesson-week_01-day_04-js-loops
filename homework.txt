@@ -1,0 +1,27 @@
+//Home work
+
+#1
+
+for(var i = 0; i <= 10; i++) {
+   console.log(i * 9)
+}
+// Bonus 
+for(var m = 1; m <= 10; m++) {
+    for(var i = 0; i <= 10; i++) {
+        console.log(i * m)
+     }
+}
+
+#2
+
+for(var i = 60; i <= 100; i++) {
+    if(i < 70) {
+        console.log("For " + i + "you got a D")
+    } else if(i < 80) {
+        console.log("For " + i + "you got a C")
+    } else if(i < 90) {
+        console.log("For " + i + "you got a B")
+    } else if(i < 100) {
+        console.log("For " + i + "you got a A")
+    }
+}
