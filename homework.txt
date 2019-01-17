@@ -21,25 +21,21 @@ console.log(result);
 //so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 function assignGrade
 
-function between(grade){
-		return grade >= 60 && grade <= 100;
+function between(grade, min, max){
+		return grade >= min && grade <= max;
 	}
 	function assignGrade(grade){
-		if(grade>80 )){
-			document.write("Grade: A" + "<br/>");
+		if(between(grade, 90, 100)){
+			console.log("Grade: A" + "<br/>");
 		}
 		else if(between(grade, 80, 89)){
 			console.log("Grade: B" + "<br/>");
 		}
 		else if(between(grade,70, 79)){
-			document.write("Grade: C" + "<br/>");
+			console.log("Grade: C" + "<br/>");
 		}
 		else if(between(grade,60,69)){
-			document.write("Grade: C-" + "<br/>");
+		console.lg("Grade: C-" + "<br/>");
 		}
-		else if(between(grade,50,59)){
-			document.write("Grade: D" + "<br/>");
-		}
-		else if(between(grade,0,49)){
-			document.write("FAIL" + "<br/>");
-		}
+    }
+       
