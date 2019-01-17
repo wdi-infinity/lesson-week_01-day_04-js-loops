@@ -1,0 +1,12 @@
+for ( var i = 60 ;i<= 100 ; i++){
+if (i < 70 ){
+console.log (i+" you will be D")
+}
+else if (i<80) {
+console.log (i+" you will be C")
+}
+else if (i<90) {
+console.log (i+" you will be B")}
+else if (i<=100) {
+console.log (i+" you will be A")}
+}
